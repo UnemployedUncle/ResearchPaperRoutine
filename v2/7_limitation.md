@@ -37,7 +37,7 @@ Hard constraints:
 - Do NOT frame limitations as “minor issues” or dismiss them.
 - Avoid generic statements like “more data is needed”.
 - Be explicit about risk, failure modes, and operational impact.
-- If a li
+
 
 
 ## User
