@@ -1,0 +1,127 @@
+﻿URL,Generate,Summary,Title,First Author,Other Authors,Year,Publisher,Keywords,File,Priority,Insights
+https://arxiv.org/pdf/2005.11401,https://unemployeduncle.app.n8n.cloud/webhook-test/37f16068-dcd5-4788-88ec-fc227ccb4f5c?url=https://arxiv.org/pdf/2005.11401,"### 1. 논문 메타데이터 추출
+
+```json
+{
+  ""title"": ""Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"",
+  ""first_author"": ""Patrick Lewis"",
+  ""other_authors"": ""Yuxiang Wu, Tim Rocktäschel, Edward Grefenstette, Jaap Kamps"",
+  ""year"": ""2020"",
+  ""publisher"": ""arXiv"",
+  ""keywords"": ""NLP, Retrieval-Augmented Generation, Knowledge-Intensive Tasks"",
+  ""file"": ""https://arxiv.org/pdf/2005.11401""
+}
+```
+
+### 1️⃣ 문제 정의 (Problem Definition)
+
+#### 기존 방법의 한계
+- 전통적인 NLP 모델은 일반적으로 충분한 지식이 없거나 최신 정보를 제공하기 어려움.
+- 고정된 훈련 데이터에 의존하여 정보가 부족할 경우 정확한 답변 제공이 어렵고, 시간이 지남에 따라 정보의 가치가 떨어짐.
+
+#### 해결하고자 하는 문제
+- 지식 집약적인 NLP 작업에서, 즉각적이고 정확한 정보를 제공하기 위해 외부 지식을 효과적으로 활용하는 방법 필요.
+
+### 2️⃣ 제안 방법 (Proposed Method)
+
+#### 핵심 아이디어
+- **Retrieval-Augmented Generation (RAG)**: 검색 기반의 정보 검색과 생성 모델을 결합하여, 필요한 정보를 검색하고 이를 기반으로 답변을 생성하는 방법.
+
+#### 주요 기술적 기여
+1. 내장된 정보 검색 기능을 통한 지식 증진.
+2. 생성 모델이 외부 데이터를 효과적으로 활용할 수 있게 함.
+3. 정량적으로 향상된 성능을 보여주며, 다양한 지식 집약적 태스크에서 적용 가능성을 확대.
+
+### 3️⃣ 방법론 상세 (Methodology Deep Dive)
+
+#### 전체 흐름
+- **입력**: 질문이나 요청.
+- **처리**: 검색 단계에서 관련 문서 찾기 + 생성 단계에서 문서를 기반으로 답변 생성.
+- **출력**: 사용자에게 유용한 답변.
+
+#### 핵심 수식 설명 (아주 쉽게)
+
+수식
+
+\[
+p(y|x) = \sum_{z \in D} p(y|z) p(z|x)
+\]
+
+이 수식이 필요한 이유
+- 주어진 질문 \(x\)에 대해 외부 데이터 \(z\)를 사용하여, 적절한 답변 \(y\)를 생성하기 위한 확률적 모델 설정.
+
+각 변수의 의미
+- \(p(y|x)\): 질문 \(x\)에 대한 생성된 답변 \(y\)의 확률.
+- \(D\): 검색된 문서의 집합.
+- \(p(y|z)\): 문서 \(z\)가 주어졌을 때 답변 \(y\)의 확률.
+- \(p(z|x)\): 질문 \(x\)에 대한 문서 \(z\)의 확률.
+
+직관적 설명
+- 질문을 바탕으로 관련 문서를 검색하고, 이 문서에 기반하여 답변을 생성하는 방식.
+
+모델 내 역할 (학습 / 추론)
+- 학습 과정에서 외부 문서 데이터를 통해 지식을 축적하고, 추론 과정에서 이를 활용하여 더 정밀한 답변을 제공.
+
+#### 모델 구조 / 아키텍처
+- RAG는 검색 모듈과 생성 모듈로 구성.
+- 검색 모듈이 관련 정보를 필터링하고, 생성 모듈이 이를 기반으로 응답을 생성.
+- 이 구조는 전통적인 단일 모델보다 더 유연하고 정확함.
+
+#### 데이터 구성
+- 다양한 온라인 데이터셋을 활용하여 문서 및 질문 쌍 구성.
+- 학습 데이터와 테스트 데이터를 분할하여 모델 성능 평가.
+
+#### Loss Function & Optimization
+- **Loss 기능**: Negative Log Likelihood 사용. 이는 모델이 올바른 답변을 생성하도록 하는데 유효.
+- **Optimizer**: Adam 최적화 알고리즘 사용, 효율적인 학습을 지원.
+
+### 4️⃣ 실험 결과 (Experiments)
+
+#### 데이터셋
+- Wikipedia, Open-domain QA 데이터셋을 활용하여 모델 성능 평가.
+
+#### 주요 성능 지표 (Metric 설명 포함)
+- **F1 Score** 및 **Exact Match**: 모델의 답변이 정답과 얼마나 일치하는지를 평가하는 지표.
+
+#### Baseline 대비 개선
+- Baseline 모델들에 비해 RAG가 전반적으로 높은 성능을 보여줌, 특히 정보 효율성이 크게 향상됨.
+
+### 5️⃣ 종합 평가 (Critical Evaluation)
+
+**[강점]**
+- 외부 데이터 활용으로 정보를 증대시킬 수 있어, 모델의 유연성 및 정확성 향상.
+
+**[약점 / 한계]**
+- 검색 기능의 품질에 따라 답변의 질이 크게 좌우될 수 있음. 또한, 적절한 문서 검색의 어려움이 존재.
+
+### 6️⃣ 우리 프로젝트 적용 가능성
+
+#### 적용 가능 부분
+- 정보 검색 및 질문 응답 시스템 모든 분야에 활용 가능.
+
+#### 추가로 필요한 작업
+- 검색 알고리즘 최적화, 보다 다양하고 신뢰할 수 있는 데이터셋 필요.
+
+#### 예상 난이도
+- Medium
+
+### 7️⃣ 관련해서 함께 읽으면 좋은 논문
+1. ""Pre-trained Transformers for Text Ranking""
+2. ""BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding""
+3. ""Improving Language Understanding by Generative Pre-Training""
+4. ""Universal Language Model Fine-tuning for Text Classification""
+
+### 8️⃣ Keywords 기반 해석
+
+- **Foundation Model (LLM, 멀티모달)**: 대규모 모델들이 다양한 태스크를 수행 가능하게 하는 기초 모델 관련.
+- **Efficiency (경량화, 추론 속도, 에너지 효율)**: 모델의 경량화 및 효율성을 중시하는 접근법.
+- **Alignment (RLHF, Safety, Interpretability)**: AI의 안전성과 해석 가능성을 향상시키기 위한 방법론.
+- **Agent / Tool Use (Planning, Function Calling)**: 모델이 여러 태스크를 계획하고 수행하는 능력의 사용.
+- **Synthetic Data (데이터 생성 전략)**: 합성 데이터를 활용하여 데이터 확장을 시도하는 방법.
+
+### 9️⃣ 한 줄 요약 (One-liner)
+이 논문을 한 문장으로 요약하면:  
+“RAG는 외부 지식을 통해 질문에 대한 정확한 답변을 제공하는 혁신적인 접근법이다.”",,,,,,,,Need to Read,
+https://arxiv.org/pdf/2512.16301,https://unemployeduncle.app.n8n.cloud/webhook-test/37f16068-dcd5-4788-88ec-fc227ccb4f5c?url=https://arxiv.org/pdf/2512.16301,,,,,,,,,Need to Read,
+https://arxiv.org/pdf/2302.06590,https://unemployeduncle.app.n8n.cloud/webhook-test/37f16068-dcd5-4788-88ec-fc227ccb4f5c?url=https://arxiv.org/pdf/2302.06590,,,,,,,,,Need to Read,
+https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf,https://unemployeduncle.app.n8n.cloud/webhook-test/37f16068-dcd5-4788-88ec-fc227ccb4f5c?url=https://storage.googleapis.com/deepmind-media/Era-of-Experience%20/The%20Era%20of%20Experience%20Paper.pdf,,,,,,,,,Need to Read,

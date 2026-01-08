@@ -94,6 +94,19 @@ Takeaways of version 2.
 - Too many workflows from the AI
 - Integrate text extraction
 - Remove search tool usage
+- Error on primary key (encoding url) - Fixed
 - Need to think of
     - How to sustain multi-turn
     - How to use differ models (Using Openrouter)
+
+스킵해도되는 세션 제거.
+수식을 그대로 가져와서 일일이 설명 필요. 그림은 따로 뽑아내서 그대로 넣는 개선 필요.
+내용 반복되는 부분 많음.
+일반론적인 내용이 많음.
+관련 개념 리프레시는 키워드 기반으로 다시 수행하거나 논문내 주요 개념들 태핑헤야함.
+연구자들한테 피드백 받아서 업데이트 필요.
+
+데파 n8n 구현.
+실제 사용 경험. 하나 수정하면 워크플로우 다 바꾸어야함. 귀찮음.
+한번 그리고 빠르게 이터레이샨 도는게 훨씬 더 정확함. (일하는 방식의 변화)
+피쳐리스트 다시 정리 후 필요한 요소만 도출. 가장 중요한 요소만 컨셉 그려냄.
