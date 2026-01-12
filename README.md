@@ -96,6 +96,7 @@ Takeaways of version 2.
 
 ## Version 3
 
+1. Prompt Change
 - Extraction of the graph, table
 - Remove duplications, too much general answers
 - Refresh concepts should be map with methodologies or keywords
@@ -103,9 +104,25 @@ Takeaways of version 2.
 - Want to know the opinion of other people
 - Future work is too much disconnected
 
-Add OpenRouter with BasicLLM
+2. Add OpenRouter with BasicLLM
 https://openrouter.ai/compare
 https://lmarena.ai/ko/leaderboard
+
+3. Set Agents
+  - Web search
+  - Chat Model
+
+| Agent    | Model | Tool | Structured Output |
+| -------- | ----- | ---- | ----------------- |
+| Meta         |  | - | json |
+| Reading Map  |  | - | - |
+| Why          |  | SerpAPI | - |
+| Methodology  |  | SerpAPI | - |
+| Deep Dive    |  | SerpAPI | - |
+| Results      |  | - | - |
+| Limitation   |  | - | - |
+| Continuation |  | SerpAPI | - |
+| Takeaway     |  | - | - |
 
 Version 4?
 * Need researchers feedback
