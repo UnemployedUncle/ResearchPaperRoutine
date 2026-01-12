@@ -5,11 +5,6 @@ Testing agentic workflow from n8n to code
 
 File name: Priority_AuthorYear_ShortTitle
 
-
-
-
-
-
 ---
 # History
 
@@ -99,26 +94,21 @@ Takeaways of version 2.
     - How to sustain multi-turn
     - How to use differ models (Using Openrouter)
 
-Feedback2
-스킵해도되는 세션 제거.
-수식을 그대로 가져와서 일일이 설명 필요. 그림은 따로 뽑아내서 그대로 넣는 개선 필요.
-내용 반복되는 부분 많음.
-일반론적인 내용이 많음.
-관련 개념 리프레시는 키워드 기반으로 다시 수행하거나 논문내 주요 개념들 태핑헤야함.
-연구자들한테 피드백 받아서 업데이트 필요.
+## Version 3
 
-데파 n8n 구현.
-실제 사용 경험. 하나 수정하면 워크플로우 다 바꾸어야함. 귀찮음.
-한번 그리고 빠르게 이터레이샨 도는게 훨씬 더 정확함. (일하는 방식의 변화)
-피쳐리스트 다시 정리 후 필요한 요소만 도출. 가장 중요한 요소만 컨셉 그려냄.
+- Extraction of the graph, table
+- Remove duplications, too much general answers
+- Refresh concepts should be map with methodologies or keywords
+- Related papers should be searched
+- Want to know the opinion of other people
+- Future work is too much disconnected
 
-개선 방안 1. 
-피드백 반영 방식 중요. 프롬프트 수정.
-수정한 프롬프트로 워크플로우 자체 수정.
-1-1. 곧바로 프롬프트로 넣을 수는 없음
-1-2. 
+Add OpenRouter with BasicLLM
+https://openrouter.ai/compare
+https://lmarena.ai/ko/leaderboard
 
-개선 방안 2. 
-관련 논문 가져와서 풍부한 피드백 제공.
-블로그 글 등 다른 사람 인사이트도 종합.
-
+Version 4?
+* Need researchers feedback
+* Cannot give feedback loop on the prompt (n8n limitations)
+* Change to code on version 4
+* How about just translation with extra explanations
