@@ -36,3 +36,8 @@ Constraints:
   방법론의 주요 개념들은 이 수식을 이해하는 데 꼭 필요한 경우에만
   필요 시, 해당 개념의 표준적 해석을 확인하기 위해 Web search를 활용해도 됩니다
   이 수식이 없다면 논문 전체 논증이 왜 무너지는지도 명확히 설명해 주세요.
+
+URL: {{ $('Get a url').item.json.URL }}
+Figure, Table, Formula: {{ $json.output }}
+Full Text:
+ {{ $json.text }}

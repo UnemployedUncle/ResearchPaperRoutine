@@ -115,13 +115,14 @@ https://lmarena.ai/ko/leaderboard
 | Agent    | Model | Tool | Structured Output | Fallback |
 | -------- | ----- | ---- | ----------------- | -------- |
 | Meta         |  | - | json | - |
+| ImageExtraction | gpt-4o-mini | Web Search, SerpAPI | json | openrouter |
 | Reading Map  |  | - | - | - |
-| Why          | gpt-4o-mini | SerpAPI | - | openrouter |
-| Methodology  | gpt-4o-mini | SerpAPI | - | openrouter |
-| Deep Dive    | gpt-4o-mini | SerpAPI | - | openrouter |
+| Why          | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
+| Methodology  | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
+| Deep Dive    | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
 | Results      |  | - | - | - |
 | Limitation   |  | - | - | - |
-| Continuation | gpt-4o-mini | SerpAPI | - | openrouter |
+| Continuation | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
 | Takeaway     |  | - | - | - |
 
 Version 4?

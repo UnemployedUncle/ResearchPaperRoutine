@@ -49,3 +49,8 @@ If the logical chain is weak or incomplete, state it explicitly
   주류 접근이나 가정을 확인하기 위해 Web search를 사용해도 됩니다
   단, 검증 가능한 대표 논문 수준까지만 사용하세요
   실무 AI 시스템 관점에서 이 논증이 언제 유지되고, 언제 깨지는지도 함께 설명해 주세요.
+
+URL: {{ $('Get a url').item.json.URL }}
+Figure, Table, Formula: {{ $json.output }}
+Full Text:
+ {{ $json.text }}

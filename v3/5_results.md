@@ -24,3 +24,6 @@ Constraints:
   데이터셋/환경에 의존적인 요소
   실무 환경에서 재현되지 않을 수 있는 조건
   시스템/파인튜닝 전략에 주는 함의
+
+Figure, Table, Formula: {{ $json.output }}
+Full Text: {{ $json.text }}

@@ -41,3 +41,8 @@ Constraints:
   등장하는 핵심 개념이나 키워드는 외부 연구 기준에서 일반적으로 어떻게 이해되는지 설명
   필요 시, 대표 논문이나 널리 인용되는 정의를 확인하기 위해 Web search를 활용해도 됩니다
   실무 시스템 / 데이터 파이프라인 관점에서 각 단계가 갖는 의미도 함께 해석해 주세요.
+
+URL: {{ $('Get a url').item.json.URL }}
+Figure, Table, Formula: {{ $json.output }}
+Full Text:
+ {{ $json.text }}
