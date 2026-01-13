@@ -112,20 +112,21 @@ https://lmarena.ai/ko/leaderboard
   - Web search
   - Chat Model
 
-| Agent    | Model | Tool | Structured Output |
-| -------- | ----- | ---- | ----------------- |
-| Meta         |  | - | json |
-| Reading Map  |  | - | - |
-| Why          |  | SerpAPI | - |
-| Methodology  |  | SerpAPI | - |
-| Deep Dive    |  | SerpAPI | - |
-| Results      |  | - | - |
-| Limitation   |  | - | - |
-| Continuation |  | SerpAPI | - |
-| Takeaway     |  | - | - |
+| Agent    | Model | Tool | Structured Output | Fallback |
+| -------- | ----- | ---- | ----------------- | -------- |
+| Meta         |  | - | json | - |
+| Reading Map  |  | - | - | - |
+| Why          | gpt-4o-mini | SerpAPI | - | openrouter |
+| Methodology  | gpt-4o-mini | SerpAPI | - | openrouter |
+| Deep Dive    | gpt-4o-mini | SerpAPI | - | openrouter |
+| Results      |  | - | - | - |
+| Limitation   |  | - | - | - |
+| Continuation | gpt-4o-mini | SerpAPI | - | openrouter |
+| Takeaway     |  | - | - | - |
 
 Version 4?
 * Need researchers feedback
 * Cannot give feedback loop on the prompt (n8n limitations)
 * Change to code on version 4
 * How about just translation with extra explanations
+
