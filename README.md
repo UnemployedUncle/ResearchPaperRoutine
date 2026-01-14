@@ -114,16 +114,16 @@ https://lmarena.ai/ko/leaderboard
 
 | Agent    | Model | Tool | Structured Output | Fallback |
 | -------- | ----- | ---- | ----------------- | -------- |
-| Meta         |  | - | json | - |
+| Meta         | gpt-4.1-mini  | - | json | openrouter |
 | ImageExtraction | gpt-4o-mini | Web Search, SerpAPI | json | openrouter |
-| Reading Map  |  | - | - | - |
+| Reading Map  | gpt-4.1-mini  | - | - | openrouter |
 | Why          | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
 | Methodology  | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
 | Deep Dive    | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
-| Results      |  | - | - | - |
-| Limitation   |  | - | - | - |
+| Results      | gpt-4.1-mini | - | - | openrouter |
+| Limitation   | gpt-4.1-mini  | - | - | openrouter |
 | Continuation | gpt-4o-mini | Web Search, SerpAPI | - | openrouter |
-| Takeaway     |  | - | - | - |
+| Takeaway     | gpt-4.1-mini  | - | - | openrouter |
 
 Version 4?
 * Need researchers feedback
@@ -131,3 +131,4 @@ Version 4?
 * Change to code on version 4
 * How about just translation with extra explanations
 
+Not runnning!
