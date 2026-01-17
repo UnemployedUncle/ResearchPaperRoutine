@@ -132,3 +132,5 @@ Version 4?
 * How about just translation with extra explanations
 
 Not runnning!
+두번 실행되는 경우 다시 타면 앞선 결과를 가져오지 못함
+큰 변화 필요
