@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "timezone": "Asia/Seoul",
+  "paper_id": "Lewis2020_RAG",
+  "source_version": "arXiv:2005.11401v4",
+  "current_session_id": "RAG-01",
+  "current_session_status": "completed",
+  "prepared_date": "2026-11-09",
+  "last_confirmed_session_id": "RAG-01",
+  "confirmed_at": "2026-11-09",
+  "confirmation_evidence": "Explicit user completion confirmation in the Research Paper Routine conversation. Private response text is not stored here.",
+  "completed_session_ids": ["RAG-01"],
+  "skipped_session_ids": [],
+  "next_session_id": "RAG-02",
+  "next_session_status": "pending_preparation",
+  "unresolved_questions": [],
+  "state_note": "The explicit completion confirmation is newer than the unconfirmed state in the prepared RAG-01 lesson. RAG-02 has not been prepared or completed. Completion records reading, not mastery of every concept."
+}
