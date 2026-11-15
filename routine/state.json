@@ -1,18 +1,66 @@
 {
   "schema_version": "1.0",
   "timezone": "Asia/Seoul",
-  "paper_id": "Lewis2020_RAG",
-  "source_version": "arXiv:2005.11401v4",
-  "current_session_id": "RAG-01",
-  "current_session_status": "completed",
-  "prepared_date": "2026-11-09",
-  "last_confirmed_session_id": "RAG-01",
-  "confirmed_at": "2026-11-09",
-  "confirmation_evidence": "Explicit user completion confirmation in the Research Paper Routine conversation. Private response text is not stored here.",
-  "completed_session_ids": ["RAG-01"],
+  "paper_id": "Barbaste2026_HarnessEngineering",
+  "paper_title": "Harness Engineering: Anatomy, Architecture, and Evolution of Coding Agents -- A Source-Code Study of Eleven Systems",
+  "source_url": "https://arxiv.org/pdf/2609.00006",
+  "source_version": "arXiv:2609.00006v1",
+  "versioned_source_url": "https://arxiv.org/pdf/2609.00006v1",
+  "current_session_id": "HE-01",
+  "current_session_status": "prepared_not_completed",
+  "prepared_date": "2026-11-15",
+  "current_lesson_path": "routine/prepared/2026-11-15_HE-01.md",
+  "current_lesson_commit": "ee86820840898be02d875bbf90e90a5134a881a8",
+  "last_confirmed_session_id": null,
+  "confirmed_at": null,
+  "confirmation_evidence": null,
+  "completed_session_ids": [],
   "skipped_session_ids": [],
-  "next_session_id": "RAG-02",
-  "next_session_status": "pending_preparation",
+  "next_session_id": "HE-02",
+  "next_session_status": "requires_HE-01_completion_confirmation",
   "unresolved_questions": [],
-  "state_note": "The explicit completion confirmation is newer than the unconfirmed state in the prepared RAG-01 lesson. RAG-02 has not been prepared or completed. Completion records reading, not mastery of every concept."
+  "selection_updated_on": "2026-11-15",
+  "selection_reason": "Explicit user request to proceed with arXiv:2609.00006 instead of the current RAG reading.",
+  "source_verification": {
+    "status": "text_verified_visual_unavailable",
+    "checked_on": "2026-11-15",
+    "primary_text_url": "https://arxiv.org/abs/2609.00006",
+    "checked_sections": ["Abstract", "1 Introduction", "2.1 Definition and Genealogy", "2.2 What a Harness Is Not", "2.3 The Seven Subsystems", "15.6 Threats to Validity"],
+    "pdf_images_verified": false,
+    "notes": "Full primary-source text was retrieved. Direct PDF loading and page screenshots failed with cache-miss errors. Use verified section titles; do not invent page numbers or claim visual inspection. v1 is the identified reading version, not asserted to be the latest."
+  },
+  "reading_route": {
+    "HE-01": "Harness definition and boundaries: Abstract, section 1 opening, sections 2.1 and 2.2; brief scope check at section 15.6.",
+    "HE-02": "Seven subsystems: section 2.3. Inspect Figure 1 and Table 1 only if their actual visuals are accessible; otherwise retain the verification limitation.",
+    "later": "Split methodology and limits, agent loop, tools/context, safety/orchestration/extensibility, cross-system observations, and design recommendations into further 30-minute sessions based on verified sections. Do not promise full-paper completion in a fixed number of days."
+  },
+  "previous_papers": [
+    {
+      "paper_id": "Lewis2020_RAG",
+      "status": "paused_by_user_paper_switch",
+      "resume_session_id": "RAG-02",
+      "resume_session_status": "prepared_and_delivered_but_reading_unconfirmed",
+      "last_known_lesson_path": "routine/prepared/2026-11-15.md",
+      "paused_on": "2026-11-15",
+      "prior_state": {
+        "schema_version": "1.0",
+        "timezone": "Asia/Seoul",
+        "paper_id": "Lewis2020_RAG",
+        "source_version": "arXiv:2005.11401v4",
+        "current_session_id": "RAG-01",
+        "current_session_status": "completed",
+        "prepared_date": "2026-11-09",
+        "last_confirmed_session_id": "RAG-01",
+        "confirmed_at": "2026-11-09",
+        "confirmation_evidence": "Explicit user completion confirmation in the Research Paper Routine conversation. Private response text is not stored here.",
+        "completed_session_ids": ["RAG-01"],
+        "skipped_session_ids": [],
+        "next_session_id": "RAG-02",
+        "next_session_status": "pending_preparation",
+        "unresolved_questions": [],
+        "state_note": "The explicit completion confirmation is newer than the unconfirmed state in the prepared RAG-01 lesson. RAG-02 has not been prepared or completed. Completion records reading, not mastery of every concept."
+      }
+    }
+  ],
+  "state_note": "Active-paper completion fields refer only to Harness Engineering. RAG-01 completion is preserved under previous_papers. RAG-02 is paused, not completed or skipped. The user explicitly requested a new paper after today's scheduled RAG delivery, so this is an intentional manual selection override; the original daily RAG file is preserved. This file records selection and preparation, not confirmed delivery or user reading completion."
 }
