@@ -8,9 +8,9 @@
   "versioned_source_url": "https://arxiv.org/pdf/2609.00006v1",
   "current_session_id": "HE-01",
   "current_session_status": "prepared_not_completed",
-  "prepared_date": "2026-11-17",
-  "current_lesson_path": "routine/prepared/2026-11-17_HE-01.md",
-  "current_lesson_commit": "85186d2c5efa2824c0bd2d06140609786742b67d",
+  "prepared_date": "2026-11-18",
+  "current_lesson_path": "routine/prepared/2026-11-18_HE-01.md",
+  "current_lesson_commit": "8c22ad23ff89dea54368cfc436dc874b22fed447",
   "last_confirmed_session_id": null,
   "confirmed_at": null,
   "confirmation_evidence": null,
@@ -20,18 +20,19 @@
   "next_session_status": "requires_HE-01_completion_confirmation",
   "unresolved_questions": [
     "HE-01 실제 독서 완료 여부 미확인",
-    "Agent 도구 실행 권한과 평가 테스트의 책임을 어떻게 구분할 것인가?"
+    "Framework 사용과 실행 Harness 구축의 운영 책임을 어떻게 분리할 것인가?"
   ],
   "selection_updated_on": "2026-11-15",
   "selection_reason": "Explicit user request to proceed with arXiv:2609.00006 instead of the current RAG reading.",
   "source_verification": {
     "status": "primary_pdf_text_and_pages_verified",
-    "checked_on": "2026-11-17",
+    "checked_on": "2026-11-18",
     "primary_text_url": "https://arxiv.org/pdf/2609.00006v1",
     "bibliographic_url": "https://arxiv.org/abs/2609.00006",
     "checked_sections": [
       "2.1 Definition and Genealogy",
-      "2.2 What a Harness Is Not"
+      "2.2 What a Harness Is Not",
+      "Section 2.1 footnote: Deep Agents / LangGraph"
     ],
     "pdf_images_verified": true,
     "pdf_pages_inspected_zero_based": [
@@ -42,7 +43,7 @@
       3,
       4
     ],
-    "notes": "arXiv v1 initial submission 2026-07-15. Primary versioned PDF opened; screenshot pages numbered 3 and 4 inspected. Section 2.3 Figure 1 visible but not analyzed as part of this HE-01 lesson; reserved for HE-02."
+    "notes": "arXiv v1 initial submission 2026-07-15. Versioned PDF parsed and visually checked pages 3 and 4 on 2026-11-18. Focus: framework library vs shipped harness runtime; section 2.1 footnote on Deep Agents built with LangGraph. Figure 1 not interpreted as part of HE-01."
   },
   "reading_route": {
     "HE-01": "Harness definition and boundaries: Abstract, section 1 opening, sections 2.1 and 2.2; brief scope check at section 15.6.",
@@ -79,5 +80,5 @@
       }
     }
   ],
-  "state_note": "2026-11-17 HE-01 focused review stored and re-read in GitHub. prepared=true, delivered=false, user_read_confirmed=false. RAG-01 confirmed earlier; RAG-02 paused incomplete. 07:15 must re-read this same file and deliver once, without fresh research or duplicate commits."
+  "state_note": "2026-11-18 HE-01 30-minute lesson prepared, stored and re-read in GitHub. prepared=true, delivered=false, user_read_confirmed=false. RAG-01 confirmed earlier; RAG-02 paused incomplete. 07:15 stage must re-read routine/prepared/2026-11-18_HE-01.md and deliver exactly once, no new research or duplicate commits."
 }
