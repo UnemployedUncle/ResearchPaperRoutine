@@ -8,9 +8,9 @@
   "versioned_source_url": "https://arxiv.org/pdf/2609.00006v1",
   "current_session_id": "HE-01",
   "current_session_status": "prepared_not_completed",
-  "prepared_date": "2026-11-20",
-  "current_lesson_path": "routine/prepared/2026-11-20_HE-01.md",
-  "current_lesson_commit": "8e0240529cc033be930611afc473faefb4bec822",
+  "prepared_date": "2026-11-21",
+  "current_lesson_path": "routine/prepared/2026-11-21_HE-01.md",
+  "current_lesson_commit": "259d2b2ca8e413fb0a8f5b0e476a562aa431b3cb",
   "last_confirmed_session_id": null,
   "confirmed_at": null,
   "confirmation_evidence": null,
@@ -20,30 +20,30 @@
   "next_session_status": "requires_HE-01_completion_confirmation",
   "unresolved_questions": [
     "HE-01 실제 독서 완료 여부 미확인",
-    "Scaffold와 배포된 Harness의 차이를 운영·로그에서 어떻게 판별할 것인가?"
+    "Harness 소스 구조의 존재와 실행 중 안전·성능 검증을 어떻게 구분할 것인가?"
   ],
   "selection_updated_on": "2026-11-15",
   "selection_reason": "Explicit user request to proceed with arXiv:2609.00006 instead of the current RAG reading.",
   "source_verification": {
     "status": "primary_pdf_text_and_pages_verified",
-    "checked_on": "2026-11-20",
-    "primary_text_url": "https://arxiv.org/pdf/2609.00006",
+    "checked_on": "2026-11-21",
+    "primary_text_url": "https://arxiv.org/pdf/2609.00006v1",
     "versioned_read_url": "https://arxiv.org/pdf/2609.00006v1",
     "bibliographic_url": "https://arxiv.org/abs/2609.00006",
     "checked_sections": [
-      "2.1 Definition and Genealogy",
-      "2.2 What a Harness Is Not — scaffold/framework/evaluation harness/orchestrator"
+      "2.2 What a Harness Is Not — evaluation harness and orchestrator",
+      "15.6 Threats to Validity — opening and first source-code-vs-runtime paragraph"
     ],
     "pdf_images_verified": true,
     "pdf_pages_inspected_zero_based": [
-      2,
-      3
+      3,
+      65
     ],
     "pdf_pages_inspected_printed": [
-      3,
-      4
+      4,
+      66
     ],
-    "notes": "2026-11-20: official PDF text and page screenshots inspected; page footer v1 and submission history 2026-07-15. Figure 1 visible but deliberately excluded from HE-01 learning scope. No performance experiment inferred."
+    "notes": "2026-11-21: official arXiv v1 PDF text and screenshots verified (printed pp. 4 and 66). The lesson distinguishes structure from runtime results. No benchmark head-to-head or unstated safety guarantee inferred. Original arXiv v1 submitted 2026-07-15; prior April 2026 edition is not a later arXiv revision."
   },
   "reading_route": {
     "HE-01": "Harness definition and boundaries: Abstract, section 1 opening, sections 2.1 and 2.2; brief scope check at section 15.6.",
@@ -80,13 +80,13 @@
       }
     }
   ],
-  "state_note": "2026-11-20 05:15 KST preparation run: one HE-01 lesson saved and verified; no new evidence of HE-01 reading completion. prepared=true, delivered=false. At 07:15, reread stored lesson, check delivery evidence, deliver full lesson once without new research or duplicate commits. Previously confirmed RAG-01 and paused incomplete RAG-02 retained.",
+  "state_note": "2026-11-21 05:15 KST preparation: verified one HE-01 lesson committed and re-read pending; no user HE-01 completion evidence; prepared=true, delivered=false. At 07:15 consult same-day stored lesson and run record; deliver once if not already delivered. Retain RAG-01 prior confirmation and RAG-02 incomplete paused status.",
   "preparation_delivery_status": {
     "prepared": true,
     "delivered": false,
     "user_read_confirmed": false,
-    "prepared_date": "2026-11-20",
+    "prepared_date": "2026-11-21",
     "delivered_at": null,
-    "material_path": "routine/prepared/2026-11-20_HE-01.md"
+    "material_path": "routine/prepared/2026-11-21_HE-01.md"
   }
 }
