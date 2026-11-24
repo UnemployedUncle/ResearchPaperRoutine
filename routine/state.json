@@ -8,9 +8,9 @@
   "versioned_source_url": "https://arxiv.org/pdf/2609.00006v1",
   "current_session_id": "HE-01",
   "current_session_status": "prepared_not_completed",
-  "prepared_date": "2026-11-24",
-  "current_lesson_path": "routine/prepared/2026-11-24_HE-01.md",
-  "current_lesson_commit": "2611122c9217caa2716894adaab3a2127d75913c",
+  "prepared_date": "2026-11-25",
+  "current_lesson_path": "routine/prepared/2026-11-25_HE-01.md",
+  "current_lesson_commit": "20585960f4f701adcccf13d31ac745fb9cf81338",
   "last_confirmed_session_id": null,
   "confirmed_at": null,
   "confirmation_evidence": null,
@@ -19,21 +19,21 @@
   "next_session_id": "HE-02",
   "next_session_status": "requires_HE-01_completion_confirmation",
   "unresolved_questions": [
-    "HE-01 실제 사용자 독서 완료 여부 미확인",
-    "프레임워크 사용 여부와 운영 가능한 Harness의 제공 여부를 어떤 기준으로 분리해 판단할 것인가?"
+    "HE-01 실제 독서 완료 여부 미확인",
+    "여러 Agent를 조율할 때 실행 실패의 책임을 어느 계층에 배정하고 검증할 것인가?"
   ],
   "selection_updated_on": "2026-11-15",
   "selection_reason": "Explicit user request to proceed with arXiv:2609.00006 instead of the current RAG reading.",
   "source_verification": {
     "status": "primary_pdf_text_and_pages_verified_via_official_link",
-    "checked_on": "2026-11-24",
+    "checked_on": "2026-11-25",
     "primary_text_url": "https://arxiv.org/html/2609.00006v1",
     "versioned_read_url": "https://arxiv.org/pdf/2609.00006v1",
     "verified_pdf_url": "https://arxiv.org/pdf/2609.00006",
     "bibliographic_url": "https://arxiv.org/abs/2609.00006",
     "checked_sections": [
-      "2.1 Definition and Genealogy, footnote 1 — printed page 3",
-      "2.2 What a Harness Is Not, first two items — printed page 4"
+      "2.1 Definition and Genealogy, last paragraph — printed page 3",
+      "2.2 What a Harness Is Not, third and fourth items — printed page 4"
     ],
     "pdf_images_verified": true,
     "pdf_pages_inspected_zero_based": [
@@ -44,7 +44,7 @@
       3,
       4
     ],
-    "notes": "Versioned PDF direct fetch DisabledError. Official abstract lists v1 dated 2026-07-15; linked 83-page PDF identifies arXiv:2609.00006v1; text and screenshots of pages 3 and 4 verified. Same-version HTML accessible. Figure 1 reserved for HE-02."
+    "notes": "Versioned PDF DisabledError; official abstract lists v1 dated 2026-07-15; linked 83-page PDF shows arXiv:2609.00006v1. Text and screenshots of printed pp. 3–4 verified; same-version HTML accessible. Figure 1 and Table 1 excluded from today's reading."
   },
   "reading_route": {
     "HE-01": "Harness definition and boundaries: Abstract, section 1 opening, sections 2.1 and 2.2; brief scope check at section 15.6.",
@@ -81,13 +81,13 @@
       }
     }
   ],
-  "state_note": "2026-11-24 preparation: README and v3 prompts reviewed; state, latest prior run, and targeted prior conversation search did not establish HE-01 completion. One lesson saved and reread exactly; sections total 30 minutes, RPR_STATE consistent. Prior RAG records unchanged. Delivery pending; 2026-11-23 delivery was not confirmed. Do not research or create duplicate material during today's delivery.",
+  "state_note": "2026-11-25 preparation: README and eight v3 prompts reviewed. Latest completed run (Nov 24 delivery), state, and targeted prior conversation search show no explicit HE-01 completion. One lesson created and exact readback verified. Prior RAG history unchanged. Nov 24 delivery result exists in automation history though prior state flag was false; delivery receipt not independently verified. Nov 25 delivery pending; read stored lesson instead of creating another.",
   "preparation_delivery_status": {
     "prepared": true,
     "delivered": false,
     "user_read_confirmed": false,
-    "prepared_date": "2026-11-24",
+    "prepared_date": "2026-11-25",
     "delivered_at": null,
-    "material_path": "routine/prepared/2026-11-24_HE-01.md"
+    "material_path": "routine/prepared/2026-11-25_HE-01.md"
   }
 }
