@@ -8,9 +8,9 @@
   "versioned_source_url": "https://arxiv.org/pdf/2609.00006v1",
   "current_session_id": "HE-01",
   "current_session_status": "prepared_not_completed",
-  "prepared_date": "2026-11-28",
-  "current_lesson_path": "routine/prepared/2026-11-28_HE-01.md",
-  "current_lesson_commit": "a3eaf910f3e38455410524b512e653af7452a0ea",
+  "prepared_date": "2026-11-29",
+  "current_lesson_path": "routine/prepared/2026-11-29_HE-01.md",
+  "current_lesson_commit": "3441dd30700ba35af4e85f0c056ea1aab3f8c913",
   "last_confirmed_session_id": null,
   "confirmed_at": null,
   "confirmation_evidence": null,
@@ -20,31 +20,31 @@
   "next_session_status": "requires_HE-01_completion_confirmation",
   "unresolved_questions": [
     "HE-01 실제 독서 완료 여부 미확인",
-    "코딩 Harness의 플랫폼화 관찰을 기업 Agent의 공통 실행 환경과 확장 설계에 어떻게 연결하고 검증할 것인가?"
+    "모델이 제안한 행동과 실행 환경이 승인한 행동을 분리하여 어떻게 검증할 것인가?"
   ],
   "selection_updated_on": "2026-11-15",
   "selection_reason": "Explicit user request to proceed with arXiv:2609.00006 instead of the current RAG reading.",
   "source_verification": {
     "status": "primary_versioned_pdf_text_and_pages_verified",
-    "checked_on": "2026-11-28",
+    "checked_on": "2026-11-29",
     "primary_text_url": "https://arxiv.org/html/2609.00006v1",
     "versioned_read_url": "https://arxiv.org/pdf/2609.00006v1",
     "verified_pdf_url": "https://arxiv.org/pdf/2609.00006v1",
     "bibliographic_url": "https://arxiv.org/abs/2609.00006v1",
     "checked_sections": [
-      "Abstract — printed page 1",
-      "1 Introduction opening three paragraphs — printed page 2"
+      "2.1 Definition and Genealogy — printed page 3",
+      "2.2 What a Harness Is Not — printed pages 3–4"
     ],
     "pdf_images_verified": true,
     "pdf_pages_inspected_zero_based": [
-      0,
-      1
+      2,
+      3
     ],
     "pdf_pages_inspected_printed": [
-      1,
-      2
+      3,
+      4
     ],
-    "notes": "Direct versioned PDF open returned DisabledError; official v1 abstract page PDF link succeeded at same versioned URL, 83 pages, pages 1–2 screenshot reviewed; v1 HTML and metadata checked. No figure/table used."
+    "notes": "Direct versioned PDF access succeeded (83 pages); screenshots of printed pages 3–4 and v1 HTML and metadata checked. No figure interpretation assigned."
   },
   "reading_route": {
     "HE-01": "Harness definition and boundaries: Abstract, section 1 opening, sections 2.1 and 2.2; brief scope check at section 15.6.",
@@ -81,13 +81,13 @@
       }
     }
   ],
-  "state_note": "2026-11-28: README and eight v3 prompts reviewed; last recorded Nov 27 result and state read, targeted user response search found no explicit HE-01 completion or skip. Daily material saved and exact readback verified; previous paper history unchanged. Delivery pending.",
+  "state_note": "2026-11-29: README and eight v3 prompts reviewed; latest recorded Nov 28 delivery result and state compared; targeted completion search found no explicit HE-01 completion or skip. Daily material saved and exact readback verified; previous_papers unchanged. Delivery pending.",
   "preparation_delivery_status": {
     "prepared": true,
     "delivered": false,
     "user_read_confirmed": false,
-    "prepared_date": "2026-11-28",
+    "prepared_date": "2026-11-29",
     "delivered_at": null,
-    "material_path": "routine/prepared/2026-11-28_HE-01.md"
+    "material_path": "routine/prepared/2026-11-29_HE-01.md"
   }
 }
